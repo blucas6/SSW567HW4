@@ -8,7 +8,7 @@ class testMain(unittest.TestCase):
         self.assertEqual(grabUserRepos('', ''), -1, "Invalid input")
     
     def testMainForInvalid(self):
-        self.assertEqual(grabUserRepos(-1, 400, 98230129830), -1, "Invalid input")
+        self.assertEqual(grabUserRepos(-1, 98230129830), -1, "Invalid input")
     
     def testMainForInvalidUser(self):
         self.assertEqual(grabUserRepos("pppfpasdfdaspfpasddfpasdfpasd"), 404, 'User does not exist')
